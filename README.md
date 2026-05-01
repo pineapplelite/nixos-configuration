@@ -1,6 +1,8 @@
-A minimalist Unix-like NixOS configuraion.
+A minimalist Unix-like NixOS configuration.
 
 ---
+
+# Configuration tree:
 
 ```
 .
@@ -55,4 +57,21 @@ A minimalist Unix-like NixOS configuraion.
 └── flake.nix
 
 19 directories, 31 files
+```
+
+# Installation
+
+## Clone the repository:
+```bash
+git clone https://github.com/pineapplelite/nixos-configuration.git && cd nixos-configuration
+```
+
+## Copy your system-generated **hardware-configuration.nix** to **./etc/hardware/**:
+```bash
+cp /etc/nixos/hardware-configuration.nix ./etc/hardware/
+```
+
+## Apply the configuration:
+```bash
+sudo nixos-rebuild switch --flake .#nixos
 ```
