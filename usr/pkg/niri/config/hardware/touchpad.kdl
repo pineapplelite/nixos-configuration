@@ -1,0 +1,13 @@
+input {
+	touchpad {
+		tap
+		dwt
+		natural-scroll
+		accel-speed 0.0
+		accel-profile "flat"
+		scroll-factor 0.5
+		tap-button-map "left-right-middle"
+		click-method "clickfinger"
+		middle-emulation
+	}
+}

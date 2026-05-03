@@ -1,0 +1,67 @@
+theme = "tokyonight"
+
+[editor]
+auto-format = true
+auto-save = true
+
+cursorline = true
+scrolloff = 5
+
+gutters = [
+  "diff",
+  "diagnostics",
+  "line-numbers",
+  "spacer",
+]
+
+auto-info = true
+completion-trigger-len = 2
+bufferline = "always"
+line-number = "relative"
+
+trim-trailing-whitespace = true
+idle-timeout = 200
+
+statusline.left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+]
+statusline.right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+statusline.mode.normal = "Normal"
+statusline.mode.insert = "Insert"
+statusline.mode.select = "Select"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "|"
+
+[keys.normal]
+"A-w" = ":w"
+"A-q" = ":q"
+
+"A-a" = "goto_previous_buffer"
+"A-s" = "buffer_picker"
+"A-d" = "goto_next_buffer"
+
+"A-e" = [
+  ':sh rm -f /tmp/yazi__selected-file',
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/yazi__selected-file',
+  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/yazi__selected-file}',
+  ':redraw',
+]

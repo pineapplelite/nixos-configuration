@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs;
   [
-    yazi
+    awww
   ];
-  home.file.".config/yazi".source = ./config;
 }

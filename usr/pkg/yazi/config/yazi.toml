@@ -1,0 +1,20 @@
+[mgr]
+sort_by = "mtime"
+sort_dir_first = true
+show_hidden = true
+show_symlink = true
+
+[preview]
+tab_size = 2
+max_width = 1024
+max_height = 1024
+image_quality = 70
+
+[opener]
+edit = [
+  {
+    run = "hx %s",
+    block = true,
+    orphan = true
+  }
+]

@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./pkg
-    ./themes
+    ./fonts.nix
+    ./cursor.nix
   ];
 }

@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs;
   [
-    yazi
+    nerd-fonts.jetbrains-mono
   ];
-  home.file.".config/yazi".source = ./config;
+  fonts.fontconfig.enable = true;
 }

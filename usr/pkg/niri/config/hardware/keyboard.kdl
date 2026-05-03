@@ -1,0 +1,13 @@
+input {
+	keyboard {
+		xkb {
+			layout "us,ua,ru"
+			options "grp:win_space_toggle,caps:escape,grp_led:caps,compose:ralt"
+		}
+
+		repeat-delay 250
+		repeat-rate 25
+		track-layout "global"
+		numlock
+	}
+}

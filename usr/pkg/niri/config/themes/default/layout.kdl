@@ -1,0 +1,14 @@
+layout {
+	gaps 12
+	always-center-single-column
+
+	default-column-width {
+		proportion 0.5;
+	}
+
+	focus-ring {
+		width 4
+		active-gradient from="#ff007f" to="#b580ff" angle=45 in="oklch longer hue"
+	}
+}
+prefer-no-csd

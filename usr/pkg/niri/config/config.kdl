@@ -1,0 +1,5 @@
+include "hardware/default.kdl"
+include "init/default.kdl"
+include "shortcuts/default.kdl"
+include "rules/default.kdl"
+include "themes/default.kdl"

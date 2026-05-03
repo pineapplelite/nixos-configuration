@@ -2,9 +2,10 @@
 
 {
   imports = [
-    ./git
-    ./tree
     ./niri
+    ./awww
+    ./mako
+    ./fuzzel
     ./foot
     ./helix
     ./yazi

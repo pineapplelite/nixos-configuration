@@ -1,7 +1,9 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
-  programs.foot = {
-    enable = true;
-  };
+  home.packages = with pkgs;
+  [
+    foot
+  ];
+  home.file.".config/foot".source = ./config;
 }

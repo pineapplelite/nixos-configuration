@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs;
   [
-    yazi
+    telegram-desktop
   ];
-  home.file.".config/yazi".source = ./config;
 }

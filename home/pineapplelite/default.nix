@@ -3,6 +3,6 @@
 {
   imports = [
     ./user.nix
-    ./home.nix
   ];
+  home-manager.users.pineapplelite = ./home.nix;
 }

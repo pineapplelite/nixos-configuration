@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs;
   [
-    yazi
+    mako
   ];
-  home.file.".config/yazi".source = ./config;
+  home.file.".config/mako".source = ./config;
 }

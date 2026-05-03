@@ -12,6 +12,7 @@ A minimalist Unix-like NixOS configuration.
 │   └── loader.nix
 ├── etc
 │   ├── hardware
+│   │   ├── audio.nix
 │   │   ├── bluetooth.nix
 │   │   ├── default.nix
 │   │   ├── graphics.nix
@@ -23,55 +24,111 @@ A minimalist Unix-like NixOS configuration.
 │   └── xdg.nix
 ├── home
 │   ├── pineapplelite
+│   │   ├── pkg
+│   │   │   ├── telegram-desktop
+│   │   │   │   └── default.nix
+│   │   │   └── default.nix
 │   │   ├── default.nix
 │   │   ├── home.nix
 │   │   └── user.nix
 │   └── default.nix
 ├── pkg
+│   ├── brightnessctl
+│   │   └── default.nix
 │   ├── dconf
 │   │   └── default.nix
+│   ├── fish
+│   │   └── default.nix
+│   ├── git
+│   │   └── default.nix
 │   ├── gvfs
+│   │   └── default.nix
+│   ├── helix
 │   │   └── default.nix
 │   ├── libinput
 │   │   └── default.nix
 │   ├── power-profiles-daemon
 │   │   └── default.nix
+│   ├── tree
+│   │   └── default.nix
 │   ├── upower
+│   │   └── default.nix
+│   ├── xdg-user-dirs
+│   │   └── default.nix
+│   ├── xdg-utils
+│   │   └── default.nix
+│   ├── yazi
 │   │   └── default.nix
 │   └── default.nix
 ├── usr
 │   ├── pkg
+│   │   ├── awww
+│   │   │   └── default.nix
 │   │   ├── foot
+│   │   │   ├── config
+│   │   │   │   └── foot.ini
+│   │   │   └── default.nix
+│   │   ├── fuzzel
+│   │   │   ├── config
+│   │   │   │   └── fuzzel.ini
 │   │   │   └── default.nix
 │   │   ├── helix
+│   │   │   ├── config
+│   │   │   │   └── config.toml
+│   │   │   └── default.nix
+│   │   ├── mako
+│   │   │   ├── config
+│   │   │   │   └── config
 │   │   │   └── default.nix
 │   │   ├── niri
+│   │   │   ├── config
+│   │   │   │   ├── hardware
+│   │   │   │   │   ├── default.kdl
+│   │   │   │   │   ├── keyboard.kdl
+│   │   │   │   │   ├── mouse.kdl
+│   │   │   │   │   └── touchpad.kdl
+│   │   │   │   ├── init
+│   │   │   │   │   ├── default.kdl
+│   │   │   │   │   ├── desktop.kdl
+│   │   │   │   │   ├── programs.kdl
+│   │   │   │   │   └── system.kdl
+│   │   │   │   ├── rules
+│   │   │   │   │   └── default.kdl
+│   │   │   │   ├── shortcuts
+│   │   │   │   │   ├── hardware
+│   │   │   │   │   │   ├── audio.kdl
+│   │   │   │   │   │   ├── brightness.kdl
+│   │   │   │   │   │   ├── default.kdl
+│   │   │   │   │   │   ├── media.kdl
+│   │   │   │   │   │   └── screen.kdl
+│   │   │   │   │   ├── shell
+│   │   │   │   │   │   ├── default.kdl
+│   │   │   │   │   │   ├── exec.kdl
+│   │   │   │   │   │   ├── system.kdl
+│   │   │   │   │   │   ├── window.kdl
+│   │   │   │   │   │   └── workspace.kdl
+│   │   │   │   │   └── default.kdl
+│   │   │   │   ├── themes
+│   │   │   │   │   ├── default
+│   │   │   │   │   │   ├── default.kdl
+│   │   │   │   │   │   └── layout.kdl
+│   │   │   │   │   └── default.kdl
+│   │   │   │   └── config.kdl
 │   │   │   └── default.nix
-│   │   ├── telegram-desktop
-│   │   │   └── default.nix
-│   │   ├── tree
+│   │   ├── yazi
+│   │   │   ├── config
+│   │   │   │   └── yazi.toml
 │   │   │   └── default.nix
 │   │   └── default.nix
+│   ├── themes
+│   │   ├── cursor.nix
+│   │   ├── default.nix
+│   │   └── fonts.nix
 │   └── default.nix
 ├── flake.lock
-└── flake.nix
+├── flake.nix
+├── LICENSE
+└── README.md
 
-19 directories, 31 files
-```
-
-# Installation
-
-## Clone the repository:
-```bash
-git clone https://github.com/pineapplelite/nixos-configuration.git && cd nixos-configuration
-```
-
-## Copy your system-generated **hardware-configuration.nix** to **./etc/hardware/**:
-```bash
-cp /etc/nixos/hardware-configuration.nix ./etc/hardware/
-```
-
-## Apply the configuration:
-```bash
-sudo nixos-rebuild switch --flake .#nixos
+46 directories, 78 files
 ```

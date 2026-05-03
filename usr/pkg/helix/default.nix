@@ -1,8 +1,5 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    helix
-  ];
+  home.file.".config/helix".source = ./config;
 }

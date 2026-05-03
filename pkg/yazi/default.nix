@@ -1,9 +1,8 @@
-{ conifg, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs;
   [
-    git
+    yazi
   ];
 }
-

@@ -1,0 +1,4 @@
+binds {
+	XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl --class=backlight set +5%"; }
+	XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl --class=backlight set 5%-"; }	
+}

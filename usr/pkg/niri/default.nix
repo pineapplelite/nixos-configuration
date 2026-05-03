@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  programs.niri.enable = true;
+  home.packages = with pkgs;
+  [
+    niri
+  ];
+  home.file.".config/niri".source = ./config;
 }

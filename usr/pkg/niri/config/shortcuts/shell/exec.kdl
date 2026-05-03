@@ -1,0 +1,6 @@
+binds {
+	Mod+Ctrl+T { spawn-sh "footclient"; }
+	Mod+Ctrl+E { spawn-sh "footclient yazi"; }
+	Mod+Ctrl+C { spawn-sh "footclient hx"; }
+	Mod+Ctrl+M { spawn-sh "fuzzel"; }
+}

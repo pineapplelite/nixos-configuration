@@ -1,0 +1,34 @@
+binds {
+	Mod+O repeat=false { toggle-overview; }
+	Mod+Tab repeat=false { focus-workspace-previous; }
+
+	Mod+F repeat=false { fullscreen-window; }
+
+	Mod+Left { focus-column-left; }
+	Mod+Down { focus-window-down; }
+	Mod+Up { focus-window-up; }
+	Mod+Right { focus-column-right; }
+
+	Mod+H { focus-column-left; }
+	Mod+J { focus-window-or-workspace-down; }
+	Mod+K { focus-window-or-workspace-up; }
+	Mod+L { focus-column-right; }
+
+	Mod+MouseBack repeat=false { focus-column-left; }
+	Mod+WheelScrollDown cooldown-ms=200 { focus-window-or-workspace-down; }
+	Mod+WheelScrollUp cooldown-ms=200 { focus-window-or-workspace-up; }
+	Mod+MouseForward repeat=false { focus-column-right; }
+
+	Mod+1 repeat=false { focus-workspace 1; }
+	Mod+2 repeat=false { focus-workspace 2; }
+	Mod+3 repeat=false { focus-workspace 3; }
+	Mod+4 repeat=false { focus-workspace 4; }
+	Mod+5 repeat=false { focus-workspace 5; }
+	Mod+6 repeat=false { focus-workspace 6; }
+	Mod+7 repeat=false { focus-workspace 7; }
+	Mod+8 repeat=false { focus-workspace 8; }
+	Mod+9 repeat=false { focus-workspace 9; }
+	Mod+0 repeat=false { focus-workspace 10; }
+
+	Mod+Print { screenshot-screen; }
+}

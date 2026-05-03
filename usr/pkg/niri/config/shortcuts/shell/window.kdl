@@ -1,0 +1,35 @@
+binds {
+	Mod+Shift+Tab { focus-window-previous; }
+
+	Mod+Shift+F repeat=false { maximize-column; }
+	Mod+Shift+Q repeat=false { close-window; }
+	Mod+Shift+V repeat=false { toggle-window-floating; }
+
+	Mod+Shift+Left { move-column-left; }
+	Mod+Shift+Down { move-window-to-workspace-down; }
+	Mod+Shift+Up { move-window-to-workspace-up; }
+	Mod+Shift+Right { move-column-left; }
+
+	Mod+Shift+H { move-column-left; }
+	Mod+Shift+J { move-window-to-workspace-down; }
+	Mod+Shift+K { move-window-to-workspace-up; }
+	Mod+Shift+L { move-column-left; }
+
+	Mod+Shift+MouseBack repeat=false { move-column-left; }
+	Mod+Shift+WheelScrollDown cooldown-ms=200 { move-window-down; }
+	Mod+Shift+WheelScrollUp cooldown-ms=200 { move-window-up; }
+	Mod+Shift+MouseForward repeat=false { move-column-right; }
+
+	Mod+Shift+1 repeat=false { move-window-to-workspace 1; }
+	Mod+Shift+2 repeat=false { move-window-to-workspace 2; }
+	Mod+Shift+3 repeat=false { move-window-to-workspace 3; }
+	Mod+Shift+4 repeat=false { move-window-to-workspace 4; }
+	Mod+Shift+5 repeat=false { move-window-to-workspace 5; }
+	Mod+Shift+6 repeat=false { move-window-to-workspace 6; }
+	Mod+Shift+7 repeat=false { move-window-to-workspace 7; }
+	Mod+Shift+8 repeat=false { move-window-to-workspace 8; }
+	Mod+Shift+9 repeat=false { move-window-to-workspace 9; }
+	Mod+Shift+0 repeat=false { move-window-to-workspace 10; }
+
+	Mod+Shift+Print { screenshot-window; }
+}

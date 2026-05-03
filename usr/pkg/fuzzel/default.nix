@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs;
   [
-    yazi
+    fuzzel
   ];
-  home.file.".config/yazi".source = ./config;
+  home.file.".config/fuzzel".source = ./config;
 }

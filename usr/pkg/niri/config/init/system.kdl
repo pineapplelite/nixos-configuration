@@ -1,0 +1,1 @@
+spawn-at-startup "xdg-user-dirs-update"
