@@ -48,7 +48,7 @@ select = "underline"
 
 [editor.indent-guides]
 render = true
-character = "|"
+character = "╎"
 
 [keys.normal]
 "A-w" = ":w"

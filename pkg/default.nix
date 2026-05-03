@@ -7,6 +7,7 @@
     ./gvfs
     ./dconf
     ./brightnessctl
+    ./playerctl
     ./xdg-utils
     ./xdg-user-dirs
     ./fish
