@@ -47,6 +47,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   ├── libinput
 │   │   └── default.nix
+│   ├── playerctl
+│   │   └── default.nix
 │   ├── power-profiles-daemon
 │   │   └── default.nix
 │   ├── tree
@@ -63,6 +65,10 @@ A minimalist Unix-like NixOS configuration.
 ├── usr
 │   ├── pkg
 │   │   ├── awww
+│   │   │   └── default.nix
+│   │   ├── clang
+│   │   │   └── default.nix
+│   │   ├── clang-tools
 │   │   │   └── default.nix
 │   │   ├── foot
 │   │   │   ├── config
@@ -115,9 +121,13 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   │   │   └── default.kdl
 │   │   │   │   └── config.kdl
 │   │   │   └── default.nix
+│   │   ├── nodejs
+│   │   │   └── default.nix
 │   │   ├── yazi
 │   │   │   ├── config
 │   │   │   │   └── yazi.toml
+│   │   │   └── default.nix
+│   │   ├── zen-browser
 │   │   │   └── default.nix
 │   │   └── default.nix
 │   ├── themes
@@ -130,5 +140,5 @@ A minimalist Unix-like NixOS configuration.
 ├── LICENSE
 └── README.md
 
-46 directories, 78 files
+51 directories, 83 files
 ```
