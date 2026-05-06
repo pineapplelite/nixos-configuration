@@ -12,6 +12,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     noctalia-shell = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,6 +36,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem
     {
       system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
       modules = [
         ./etc
         ./boot

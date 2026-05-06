@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./gtk
     ./wl-clipboard
     ./cliphist
     ./niri
@@ -18,6 +19,7 @@
     ./thunar
     ./zen-browser # flakeLevelPackage
     ./ungoogled-chromium
+    ./epiphany
 
     ./inkscape
     ./gimp

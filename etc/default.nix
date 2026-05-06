@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware
+    ./stylix
     ./swap.nix
     ./locale.nix
     ./network.nix

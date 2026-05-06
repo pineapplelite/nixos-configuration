@@ -16,6 +16,11 @@ A minimalist Unix-like NixOS configuration.
 │   │   ├── default.nix
 │   │   ├── graphics.nix
 │   │   └── hardware-configuration.nix
+│   ├── stylix
+│   │   ├── cursor.nix
+│   │   ├── default.nix
+│   │   ├── fonts.nix
+│   │   └── noctalia.png
 │   ├── dbus.nix
 │   ├── default.nix
 │   ├── locale.nix
@@ -94,6 +99,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   └── default.nix
 │   │   ├── cliphist
 │   │   │   └── default.nix
+│   │   ├── epiphany
+│   │   │   └── default.nix
 │   │   ├── fastfetch
 │   │   │   ├── config
 │   │   │   │   └── config.jsonc
@@ -108,6 +115,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   │   └── fuzzel.ini
 │   │   │   └── default.nix
 │   │   ├── gimp
+│   │   │   └── default.nix
+│   │   ├── gtk
 │   │   │   └── default.nix
 │   │   ├── helix
 │   │   │   ├── config
@@ -185,15 +194,11 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   ├── default.nix
 │   │   │   └── ~flakeLevelPackage
 │   │   └── default.nix
-│   ├── themes
-│   │   ├── cursor.nix
-│   │   ├── default.nix
-│   │   └── fonts.nix
 │   └── default.nix
 ├── flake.lock
 ├── flake.nix
 ├── LICENSE
 └── README.md
 
-75 directories, 114 files
+77 directories, 117 files
 ```
