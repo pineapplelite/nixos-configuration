@@ -1,6 +1,9 @@
 binds {
 	Mod+Ctrl+T { spawn-sh "footclient"; }
-	Mod+Ctrl+E { spawn-sh "footclient yazi"; }
-	Mod+Ctrl+C { spawn-sh "footclient hx"; }
-	Mod+Ctrl+M { spawn-sh "fuzzel"; }
+	Mod+Ctrl+F { spawn-sh "footclient yazi"; }
+	Mod+Ctrl+E { spawn-sh "footclient hx"; }
+	Mod+Ctrl+B { spawn-sh "$HOME/.config/niri/scripts/select-browser.sh"; }
+	Mod+Ctrl+L { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+	Mod+Ctrl+C { spawn-sh "noctalia-shell ipc call controlCenter toggle"; }
+	Mod+Ctrl+S { spawn-sh "noctalia-shell ipc call settings toggle"; }
 }

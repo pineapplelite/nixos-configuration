@@ -1,0 +1,17 @@
+theme "tokyo-night-dark"
+
+on_force_close "quit"
+ui {
+	pane_frames {
+		rounded_corners true
+	}
+}
+show_startup_tips false
+show_release_notes false
+focus_follows_mouse true
+
+plugins {
+	configuration location="zellij:configuration"
+	plugin-manager location="zellij:plugin-manager"
+	session-manager location="zellij:session-manager"
+}

@@ -1,4 +1,2 @@
 spawn-at-startup "foot" "--server"
-spawn-at-startup "mako"
-spawn-at-startup "awww-daemon"
-spawn-at-startup "sh" "-c" "'awww img $HOME/Pictures/Wallpapers/0.jpg'"
+spawn-at-startup "noctalia-shell"

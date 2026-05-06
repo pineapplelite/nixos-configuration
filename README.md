@@ -12,19 +12,23 @@ A minimalist Unix-like NixOS configuration.
 │   └── loader.nix
 ├── etc
 │   ├── hardware
-│   │   ├── audio.nix
 │   │   ├── bluetooth.nix
 │   │   ├── default.nix
 │   │   ├── graphics.nix
 │   │   └── hardware-configuration.nix
+│   ├── dbus.nix
 │   ├── default.nix
 │   ├── locale.nix
 │   ├── network.nix
+│   ├── pipewire.nix
+│   ├── polkit.nix
 │   ├── swap.nix
 │   └── xdg.nix
 ├── home
 │   ├── pineapplelite
 │   │   ├── pkg
+│   │   │   ├── fluffychat
+│   │   │   │   └── default.nix
 │   │   │   ├── telegram-desktop
 │   │   │   │   └── default.nix
 │   │   │   └── default.nix
@@ -33,9 +37,17 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── user.nix
 │   └── default.nix
 ├── pkg
+│   ├── android-tools
+│   │   └── default.nix
+│   ├── bottom
+│   │   └── default.nix
 │   ├── brightnessctl
 │   │   └── default.nix
+│   ├── clang
+│   │   └── default.nix
 │   ├── dconf
+│   │   └── default.nix
+│   ├── fastfetch
 │   │   └── default.nix
 │   ├── fish
 │   │   └── default.nix
@@ -47,9 +59,19 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   ├── libinput
 │   │   └── default.nix
+│   ├── libva
+│   │   └── default.nix
+│   ├── libva-utils
+│   │   └── default.nix
+│   ├── mesa
+│   │   └── default.nix
+│   ├── ouch
+│   │   └── default.nix
 │   ├── playerctl
 │   │   └── default.nix
 │   ├── power-profiles-daemon
+│   │   └── default.nix
+│   ├── scc
 │   │   └── default.nix
 │   ├── tree
 │   │   └── default.nix
@@ -59,17 +81,24 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   ├── xdg-utils
 │   │   └── default.nix
+│   ├── xwayland
+│   │   └── default.nix
+│   ├── xwayland-satellite
+│   │   └── default.nix
 │   ├── yazi
 │   │   └── default.nix
 │   └── default.nix
 ├── usr
 │   ├── pkg
-│   │   ├── awww
-│   │   │   └── default.nix
-│   │   ├── clang
-│   │   │   └── default.nix
 │   │   ├── clang-tools
 │   │   │   └── default.nix
+│   │   ├── cliphist
+│   │   │   └── default.nix
+│   │   ├── fastfetch
+│   │   │   ├── config
+│   │   │   │   └── config.jsonc
+│   │   │   ├── default.nix
+│   │   │   └── ~systemLevelPackage
 │   │   ├── foot
 │   │   │   ├── config
 │   │   │   │   └── foot.ini
@@ -78,13 +107,18 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   ├── config
 │   │   │   │   └── fuzzel.ini
 │   │   │   └── default.nix
+│   │   ├── gimp
+│   │   │   └── default.nix
 │   │   ├── helix
 │   │   │   ├── config
 │   │   │   │   └── config.toml
+│   │   │   ├── default.nix
+│   │   │   └── ~systemLevelPackage
+│   │   ├── inkscape
 │   │   │   └── default.nix
-│   │   ├── mako
-│   │   │   ├── config
-│   │   │   │   └── config
+│   │   ├── libreoffice-fresh
+│   │   │   └── default.nix
+│   │   ├── live-server
 │   │   │   └── default.nix
 │   │   ├── niri
 │   │   │   ├── config
@@ -100,6 +134,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   │   │   └── system.kdl
 │   │   │   │   ├── rules
 │   │   │   │   │   └── default.kdl
+│   │   │   │   ├── scripts
+│   │   │   │   │   └── select-browser.sh
 │   │   │   │   ├── shortcuts
 │   │   │   │   │   ├── hardware
 │   │   │   │   │   │   ├── audio.kdl
@@ -121,14 +157,33 @@ A minimalist Unix-like NixOS configuration.
 │   │   │   │   │   └── default.kdl
 │   │   │   │   └── config.kdl
 │   │   │   └── default.nix
-│   │   ├── nodejs
+│   │   ├── noctalia-shell
+│   │   │   ├── default.nix
+│   │   │   └── ~flakeLevelPackage
+│   │   ├── quickshell
+│   │   │   └── default.nix
+│   │   ├── thunar
+│   │   │   └── default.nix
+│   │   ├── typescript-language-server
+│   │   │   └── default.nix
+│   │   ├── ungoogled-chromium
+│   │   │   └── default.nix
+│   │   ├── vscode-langservers-extracted
+│   │   │   └── default.nix
+│   │   ├── wl-clipboard
 │   │   │   └── default.nix
 │   │   ├── yazi
 │   │   │   ├── config
 │   │   │   │   └── yazi.toml
+│   │   │   ├── default.nix
+│   │   │   └── ~systemLevelPackage
+│   │   ├── zellij
+│   │   │   ├── config
+│   │   │   │   └── config.kdl
 │   │   │   └── default.nix
 │   │   ├── zen-browser
-│   │   │   └── default.nix
+│   │   │   ├── default.nix
+│   │   │   └── ~flakeLevelPackage
 │   │   └── default.nix
 │   ├── themes
 │   │   ├── cursor.nix
@@ -140,5 +195,5 @@ A minimalist Unix-like NixOS configuration.
 ├── LICENSE
 └── README.md
 
-51 directories, 83 files
+75 directories, 114 files
 ```

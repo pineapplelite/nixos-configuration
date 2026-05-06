@@ -7,6 +7,8 @@
     ./locale.nix
     ./network.nix
     ./xdg.nix
+    ./dbus.nix
+    ./pipewire.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

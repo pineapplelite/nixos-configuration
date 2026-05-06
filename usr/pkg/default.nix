@@ -2,17 +2,30 @@
 
 {
   imports = [
+    ./wl-clipboard
+    ./cliphist
     ./niri
-    ./awww
-    ./mako
+    ./quickshell
+    ./noctalia-shell # flakeLevelPackage
     ./fuzzel
-    ./foot
-    ./helix
-    ./yazi
-    ./zen-browser
 
-    ./clang
+    ./fastfetch # systemLevelPackage
+    ./foot
+    ./zellij
+    ./helix # systemLevelPackage
+    ./yazi # systemLevelPackage
+
+    ./thunar
+    ./zen-browser # flakeLevelPackage
+    ./ungoogled-chromium
+
+    ./inkscape
+    ./gimp
+    ./libreoffice-fresh
+
+    ./vscode-langservers-extracted
+    ./typescript-language-server
+    ./live-server
     ./clang-tools
-    ./nodejs
   ];
 }

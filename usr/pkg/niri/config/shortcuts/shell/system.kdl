@@ -1,4 +1,5 @@
 binds {
-	Mod+Alt+Delete { quit; }
+	Ctrl+Alt+Delete { quit; }
 	Mod+Alt+Slash { show-hotkey-overlay; }
+	Mod+Alt+L { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 }

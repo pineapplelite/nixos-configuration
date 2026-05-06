@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs;
   [
-    mako
+    wl-clipboard
   ];
-  home.file.".config/mako".source = ./config;
 }

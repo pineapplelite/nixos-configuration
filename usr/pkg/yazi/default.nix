@@ -1,9 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs;
-  [
-    yazi
-  ];
   home.file.".config/yazi".source = ./config;
 }

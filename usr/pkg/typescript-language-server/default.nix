@@ -3,6 +3,6 @@
 {
   home.packages = with pkgs;
   [
-    awww
+    typescript-language-server
   ];
 }
