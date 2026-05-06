@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./telegram-desktop
     ./fluffychat
   ];
 }
