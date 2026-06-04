@@ -1,8 +1,8 @@
 { config, ... }:
 
 {
-  imports = [
-    ./telegram-desktop
-    ./fluffychat
-  ];
+	imports = [
+		./telegram-desktop
+		./fluffychat
+	];
 }

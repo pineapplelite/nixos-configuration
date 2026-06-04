@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    brightnessctl
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		brightnessctl
+	];
 }

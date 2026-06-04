@@ -1,0 +1,7 @@
+{ config, ... }:
+
+{
+  imports = [
+    ./lxqt-policykit
+  ];
+}

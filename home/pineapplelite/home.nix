@@ -1,12 +1,12 @@
 { config, ... }:
 
 {
-  home.username = "pineapplelite";
-  home.homeDirectory = "/home/pineapplelite";
+	home.username = "pineapplelite";
+	home.homeDirectory = "/home/pineapplelite";
 
-  imports = [
-    ./pkg
-  ];
+	imports = [
+		./pkg
+	];
 
-  home.stateVersion = "25.11";
+	home.stateVersion = "26.05";
 }

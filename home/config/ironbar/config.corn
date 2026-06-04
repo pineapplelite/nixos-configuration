@@ -1,0 +1,57 @@
+let {
+	// -- start --
+
+	$focused_window = {
+		name = "topbar-focused_window"
+		type = "script"
+		cmd = "niri msg -j focused-window | jq -r '(.title // \"Niri\") | if length > 13 then .[:13] else . end'"
+		interval = 500
+	}
+
+	// -- center --
+
+	$workspaces = {
+		name = "topbar-workspaces"
+		type = "workspaces"
+	}
+
+	// -- end -- 
+
+	$keyboard_layout = {
+		name = "topbar-keyboard_layout"
+		type = "script"
+		cmd = "niri msg -j keyboard-layouts | jq -r '.names[.current_idx] | .[0:2] | ascii_downcase'"
+		interval = 100
+	}
+
+	$battery = {
+		name = "topbar-battery"
+		type = "battery"
+		show_icon = false
+	}
+
+	$bluetooth = {
+		name = "topbar-bluetooth"
+		type = "bluetooth"
+	}
+
+	$clock = {
+		name = "topbar-clock"
+		type = "clock"
+		format = "%Y-%m-%d %H:%M"
+	}
+} in {
+	monitors.eDP-1 = [
+		{
+			name = "topbar"
+			position = "top"
+			margin.top = 6
+			margin.left = 6
+			margin.right = 6
+
+			start = [ $focused_window ]
+			center = [ $workspaces ]
+			end = [ $keyboard_layout $battery $bluetooth $clock ]
+		}
+	]
+}

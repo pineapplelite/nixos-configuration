@@ -1,0 +1,5 @@
+binds {
+	Mod+T { spawn-sh "footclient"; }
+	Mod+B { spawn-sh "librewolf"; }
+	Mod+D { spawn-sh "fuzzel"; }
+}

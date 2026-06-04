@@ -1,36 +1,67 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
-  imports = [
-    ./mesa
-    ./libva
-    ./libva-utils
+	imports = [
+		./mesa
+		./libva-utils
+		./xdg-utils
+		./xdg-user-dirs
+		./xfconf
 
-    ./upower
-    ./libinput
-    ./gvfs
-    ./dconf
-    ./power-profiles-daemon
+		./niri
+		./swayidle
+		./gtklock
+		./ironbar
+		./fish
+		./awww
+		./mako
 
-    ./brightnessctl
-    ./playerctl
+		./wl-clipboard
+		./cliphist
 
-    ./xdg-utils
-    ./xdg-user-dirs
-    ./xwayland
-    ./xwayland-satellite
-    ./android-tools
+		./brightnessctl
+		./playerctl
 
-    ./fish
-    ./fastfetch
-    ./bottom
-    ./git
-    ./tree
-    ./scc
-    ./helix
-    ./yazi
-    ./ouch
+		./clang
+		./clang-tools
+		./rustc
+		./cargo
+		./rust-analyzer
+		./zig
+		./zls
+		./go
+		./gopls
+		./nixd
+		./typescript-language-server
+		./vscode-langservers-extracted
+		./live-server
 
-    ./clang
-  ];
+		./ouch
+		./android-tools
+		./git
+		./scc
+		./fastfetch
+		./tree
+		./bottom
+		./jq
+
+		./amberol
+		./loupe
+		./celluloid
+		./file-roller
+		./blender
+		./libreoffice-fresh
+		./retext
+		./gimp
+		./thunar
+		./librewolf
+		./helix
+		./yazi
+		./fuzzel
+		./zellij
+		./foot
+
+		./lxqt
+		./kdePackages
+	];
 }

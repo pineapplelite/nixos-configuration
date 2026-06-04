@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    mesa
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		mesa
+	];
 }

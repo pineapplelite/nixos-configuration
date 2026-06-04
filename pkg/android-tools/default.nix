@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    android-tools
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		android-tools
+	];
 }

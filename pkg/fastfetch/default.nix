@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    fastfetch
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		fastfetch
+	];
 }

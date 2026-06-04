@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    libva-utils
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		libva-utils
+	];
 }

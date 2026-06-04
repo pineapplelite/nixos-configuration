@@ -6,30 +6,61 @@ A minimalist Unix-like NixOS configuration.
 
 ```
 .
-├── boot
-│   ├── default.nix
-│   ├── kernel.nix
-│   └── loader.nix
-├── etc
-│   ├── hardware
-│   │   ├── bluetooth.nix
-│   │   ├── default.nix
-│   │   ├── graphics.nix
-│   │   └── hardware-configuration.nix
-│   ├── stylix
-│   │   ├── cursor.nix
-│   │   ├── default.nix
-│   │   ├── fonts.nix
-│   │   └── noctalia.png
-│   ├── dbus.nix
-│   ├── default.nix
-│   ├── locale.nix
-│   ├── network.nix
-│   ├── pipewire.nix
-│   ├── polkit.nix
-│   ├── swap.nix
-│   └── xdg.nix
 ├── home
+│   ├── config
+│   │   ├── fastfetch
+│   │   │   └── config.jsonc
+│   │   ├── foot
+│   │   │   └── foot.ini
+│   │   ├── fuzzel
+│   │   │   └── fuzzel.ini
+│   │   ├── helix
+│   │   │   ├── config.toml
+│   │   │   └── languages.toml
+│   │   ├── ironbar
+│   │   │   ├── config.corn
+│   │   │   └── style.css
+│   │   ├── mako
+│   │   │   └── config
+│   │   ├── niri
+│   │   │   ├── hardware
+│   │   │   │   ├── default.kdl
+│   │   │   │   ├── keyboard.kdl
+│   │   │   │   ├── mouse.kdl
+│   │   │   │   └── touchpad.kdl
+│   │   │   ├── init
+│   │   │   │   ├── default.kdl
+│   │   │   │   ├── desktop.kdl
+│   │   │   │   ├── programs.kdl
+│   │   │   │   └── system.kdl
+│   │   │   ├── rules
+│   │   │   │   ├── default.kdl
+│   │   │   │   └── layout.kdl
+│   │   │   ├── shortcuts
+│   │   │   │   ├── hardware
+│   │   │   │   │   ├── audio.kdl
+│   │   │   │   │   ├── brightness.kdl
+│   │   │   │   │   ├── default.kdl
+│   │   │   │   │   └── media.kdl
+│   │   │   │   ├── shell
+│   │   │   │   │   ├── default.kdl
+│   │   │   │   │   ├── exec.kdl
+│   │   │   │   │   ├── screenshot.kdl
+│   │   │   │   │   ├── system.kdl
+│   │   │   │   │   ├── window.kdl
+│   │   │   │   │   └── workspace.kdl
+│   │   │   │   └── default.kdl
+│   │   │   ├── themes
+│   │   │   │   ├── default
+│   │   │   │   │   ├── default.kdl
+│   │   │   │   │   └── layout.kdl
+│   │   │   │   └── default.kdl
+│   │   │   └── config.kdl
+│   │   ├── yazi
+│   │   │   └── yazi.toml
+│   │   ├── zellij
+│   │   │   └── config.kdl
+│   │   └── default.nix
 │   ├── pineapplelite
 │   │   ├── pkg
 │   │   │   ├── fluffychat
@@ -42,163 +73,174 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── user.nix
 │   └── default.nix
 ├── pkg
+│   ├── amberol
+│   │   └── default.nix
 │   ├── android-tools
+│   │   └── default.nix
+│   ├── awww
+│   │   └── default.nix
+│   ├── blender
 │   │   └── default.nix
 │   ├── bottom
 │   │   └── default.nix
 │   ├── brightnessctl
 │   │   └── default.nix
+│   ├── cargo
+│   │   └── default.nix
+│   ├── celluloid
+│   │   └── default.nix
 │   ├── clang
 │   │   └── default.nix
-│   ├── dconf
+│   ├── clang-tools
+│   │   └── default.nix
+│   ├── cliphist
 │   │   └── default.nix
 │   ├── fastfetch
 │   │   └── default.nix
+│   ├── file-roller
+│   │   └── default.nix
 │   ├── fish
+│   │   └── default.nix
+│   ├── foot
+│   │   └── default.nix
+│   ├── fuzzel
+│   │   └── default.nix
+│   ├── gimp
 │   │   └── default.nix
 │   ├── git
 │   │   └── default.nix
-│   ├── gvfs
+│   ├── go
+│   │   └── default.nix
+│   ├── gopls
+│   │   └── default.nix
+│   ├── gtkgreet
+│   │   └── default.nix
+│   ├── gtklock
 │   │   └── default.nix
 │   ├── helix
 │   │   └── default.nix
-│   ├── libinput
+│   ├── ironbar
 │   │   └── default.nix
-│   ├── libva
+│   ├── jq
+│   │   └── default.nix
+│   ├── kdePackages
+│   │   ├── okular
+│   │   │   └── default.nix
+│   │   └── default.nix
+│   ├── libreoffice-fresh
+│   │   └── default.nix
+│   ├── librewolf
 │   │   └── default.nix
 │   ├── libva-utils
 │   │   └── default.nix
+│   ├── live-server
+│   │   └── default.nix
+│   ├── loupe
+│   │   └── default.nix
+│   ├── lxqt
+│   │   ├── lxqt-policykit
+│   │   │   └── default.nix
+│   │   └── default.nix
+│   ├── mako
+│   │   └── default.nix
 │   ├── mesa
+│   │   └── default.nix
+│   ├── niri
+│   │   └── default.nix
+│   ├── nixd
 │   │   └── default.nix
 │   ├── ouch
 │   │   └── default.nix
 │   ├── playerctl
 │   │   └── default.nix
-│   ├── power-profiles-daemon
+│   ├── retext
+│   │   └── default.nix
+│   ├── rust-analyzer
+│   │   └── default.nix
+│   ├── rustc
 │   │   └── default.nix
 │   ├── scc
 │   │   └── default.nix
+│   ├── steam
+│   │   └── default.nix
+│   ├── swayidle
+│   │   └── default.nix
+│   ├── thunar
+│   │   └── default.nix
 │   ├── tree
 │   │   └── default.nix
-│   ├── upower
+│   ├── typescript-language-server
+│   │   └── default.nix
+│   ├── vscode-langservers-extracted
+│   │   └── default.nix
+│   ├── wl-clipboard
 │   │   └── default.nix
 │   ├── xdg-user-dirs
 │   │   └── default.nix
 │   ├── xdg-utils
 │   │   └── default.nix
-│   ├── xwayland
-│   │   └── default.nix
-│   ├── xwayland-satellite
+│   ├── xfconf
 │   │   └── default.nix
 │   ├── yazi
 │   │   └── default.nix
-│   └── default.nix
-├── usr
-│   ├── pkg
-│   │   ├── clang-tools
-│   │   │   └── default.nix
-│   │   ├── cliphist
-│   │   │   └── default.nix
-│   │   ├── epiphany
-│   │   │   └── default.nix
-│   │   ├── fastfetch
-│   │   │   ├── config
-│   │   │   │   └── config.jsonc
-│   │   │   ├── default.nix
-│   │   │   └── ~systemLevelPackage
-│   │   ├── foot
-│   │   │   ├── config
-│   │   │   │   └── foot.ini
-│   │   │   └── default.nix
-│   │   ├── fuzzel
-│   │   │   ├── config
-│   │   │   │   └── fuzzel.ini
-│   │   │   └── default.nix
-│   │   ├── gimp
-│   │   │   └── default.nix
-│   │   ├── gtk
-│   │   │   └── default.nix
-│   │   ├── helix
-│   │   │   ├── config
-│   │   │   │   └── config.toml
-│   │   │   ├── default.nix
-│   │   │   └── ~systemLevelPackage
-│   │   ├── inkscape
-│   │   │   └── default.nix
-│   │   ├── libreoffice-fresh
-│   │   │   └── default.nix
-│   │   ├── live-server
-│   │   │   └── default.nix
-│   │   ├── niri
-│   │   │   ├── config
-│   │   │   │   ├── hardware
-│   │   │   │   │   ├── default.kdl
-│   │   │   │   │   ├── keyboard.kdl
-│   │   │   │   │   ├── mouse.kdl
-│   │   │   │   │   └── touchpad.kdl
-│   │   │   │   ├── init
-│   │   │   │   │   ├── default.kdl
-│   │   │   │   │   ├── desktop.kdl
-│   │   │   │   │   ├── programs.kdl
-│   │   │   │   │   └── system.kdl
-│   │   │   │   ├── rules
-│   │   │   │   │   └── default.kdl
-│   │   │   │   ├── scripts
-│   │   │   │   │   └── select-browser.sh
-│   │   │   │   ├── shortcuts
-│   │   │   │   │   ├── hardware
-│   │   │   │   │   │   ├── audio.kdl
-│   │   │   │   │   │   ├── brightness.kdl
-│   │   │   │   │   │   ├── default.kdl
-│   │   │   │   │   │   ├── media.kdl
-│   │   │   │   │   │   └── screen.kdl
-│   │   │   │   │   ├── shell
-│   │   │   │   │   │   ├── default.kdl
-│   │   │   │   │   │   ├── exec.kdl
-│   │   │   │   │   │   ├── system.kdl
-│   │   │   │   │   │   ├── window.kdl
-│   │   │   │   │   │   └── workspace.kdl
-│   │   │   │   │   └── default.kdl
-│   │   │   │   ├── themes
-│   │   │   │   │   ├── default
-│   │   │   │   │   │   ├── default.kdl
-│   │   │   │   │   │   └── layout.kdl
-│   │   │   │   │   └── default.kdl
-│   │   │   │   └── config.kdl
-│   │   │   └── default.nix
-│   │   ├── noctalia-shell
-│   │   │   ├── default.nix
-│   │   │   └── ~flakeLevelPackage
-│   │   ├── quickshell
-│   │   │   └── default.nix
-│   │   ├── thunar
-│   │   │   └── default.nix
-│   │   ├── typescript-language-server
-│   │   │   └── default.nix
-│   │   ├── ungoogled-chromium
-│   │   │   └── default.nix
-│   │   ├── vscode-langservers-extracted
-│   │   │   └── default.nix
-│   │   ├── wl-clipboard
-│   │   │   └── default.nix
-│   │   ├── yazi
-│   │   │   ├── config
-│   │   │   │   └── yazi.toml
-│   │   │   ├── default.nix
-│   │   │   └── ~systemLevelPackage
-│   │   ├── zellij
-│   │   │   ├── config
-│   │   │   │   └── config.kdl
-│   │   │   └── default.nix
-│   │   ├── zen-browser
-│   │   │   ├── default.nix
-│   │   │   └── ~flakeLevelPackage
+│   ├── zellij
+│   │   └── default.nix
+│   ├── zig
+│   │   └── default.nix
+│   ├── zls
 │   │   └── default.nix
 │   └── default.nix
+├── svc
+│   ├── dbus
+│   │   └── default.nix
+│   ├── flatpak
+│   │   └── default.nix
+│   ├── flatpak-repo
+│   │   └── default.nix
+│   ├── gvfs
+│   │   └── default.nix
+│   ├── libinput
+│   │   └── default.nix
+│   ├── logind
+│   │   └── default.nix
+│   ├── ly
+│   │   └── default.nix
+│   ├── pipewire
+│   │   └── default.nix
+│   ├── power-profiles-daemon
+│   │   └── default.nix
+│   ├── swayidle
+│   │   └── default.nix
+│   ├── tumbler
+│   │   └── default.nix
+│   ├── upower
+│   │   └── default.nix
+│   └── default.nix
+├── sys
+│   ├── hardware
+│   │   ├── bluetooth.nix
+│   │   ├── default.nix
+│   │   ├── graphics.nix
+│   │   └── hardware-configuration.nix
+│   ├── boot.nix
+│   ├── default.nix
+│   ├── env.nix
+│   ├── kernel.nix
+│   ├── locale.nix
+│   ├── memory.nix
+│   ├── networking.nix
+│   ├── security.nix
+│   └── xdg.nix
+├── ui
+│   ├── cursor.nix
+│   ├── default.nix
+│   ├── fonts.nix
+│   ├── stylix.nix
+│   └── wallpaper.png
 ├── flake.lock
 ├── flake.nix
 ├── LICENSE
 └── README.md
 
-77 directories, 117 files
+99 directories, 137 files
 ```

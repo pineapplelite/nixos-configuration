@@ -1,0 +1,6 @@
+binds {
+	Print { screenshot; }
+	Mod+Print { screenshot-screen; }
+	Mod+Shift+Print { screenshot-window; }
+}
+

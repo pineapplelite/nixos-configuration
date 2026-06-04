@@ -1,0 +1,2 @@
+spawn-at-startup "xdg-user-dirs-update"
+spawn-at-startup "lxqt-policykit-agent"

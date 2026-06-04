@@ -1,7 +1,7 @@
 { config, ... }:
 
 {
-  imports = [
-    ./pineapplelite
-  ];
+	imports = [
+		./pineapplelite
+	];
 }

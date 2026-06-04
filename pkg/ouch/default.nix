@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
-  [
-    ouch
-  ];
+	environment.systemPackages = with pkgs;
+	[
+		ouch
+	];
 }

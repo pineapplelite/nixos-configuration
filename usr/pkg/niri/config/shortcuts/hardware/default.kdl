@@ -1,4 +1,0 @@
-include "brightness.kdl"
-include "audio.kdl"
-include "media.kdl"
-include "screen.kdl"
