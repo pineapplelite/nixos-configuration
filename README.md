@@ -5,6 +5,7 @@ A minimalist Unix-like NixOS configuration.
 # Configuration tree:
 
 ```
+tree --dirsfirst
 .
 ├── home
 │   ├── config
@@ -127,6 +128,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   ├── okular
 │   │   │   └── default.nix
 │   │   └── default.nix
+│   ├── kid3
+│   │   └── default.nix
 │   ├── libreoffice-fresh
 │   │   └── default.nix
 │   ├── librewolf
@@ -181,6 +184,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   ├── xfconf
 │   │   └── default.nix
+│   ├── xwayland-satellite
+│   │   └── default.nix
 │   ├── yazi
 │   │   └── default.nix
 │   ├── zellij
@@ -191,6 +196,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   └── default.nix
 ├── svc
+│   ├── blueman
+│   │   └── default.nix
 │   ├── dbus
 │   │   └── default.nix
 │   ├── flatpak
@@ -242,5 +249,5 @@ A minimalist Unix-like NixOS configuration.
 ├── LICENSE
 └── README.md
 
-99 directories, 137 files
+102 directories, 140 files
 ```

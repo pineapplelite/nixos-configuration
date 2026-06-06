@@ -7,6 +7,7 @@
 		./xdg-utils
 		./xdg-user-dirs
 		./xfconf
+		./xwayland-satellite
 
 		./niri
 		./swayidle
@@ -60,6 +61,8 @@
 		./fuzzel
 		./zellij
 		./foot
+		./steam
+		./kid3
 
 		./lxqt
 		./kdePackages

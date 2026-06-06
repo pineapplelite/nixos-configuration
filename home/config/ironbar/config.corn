@@ -4,8 +4,8 @@ let {
 	$focused_window = {
 		name = "topbar-focused_window"
 		type = "script"
-		cmd = "niri msg -j focused-window | jq -r '(.title // \"Niri\") | if length > 13 then .[:13] else . end'"
-		interval = 500
+		cmd = "niri msg -j focused-window | jq -r '(.title // \"Niri\") | if length > 13 then .[:13] + \"...\" else . end'"
+		interval = 200
 	}
 
 	// -- center --
@@ -27,12 +27,20 @@ let {
 	$battery = {
 		name = "topbar-battery"
 		type = "battery"
+
 		show_icon = false
+		format = "󰂄 {percentage}%"
 	}
 
 	$bluetooth = {
 		name = "topbar-bluetooth"
 		type = "bluetooth"
+
+		format.not_found = "󰂲"
+		format.disabled = "󰂲"
+		format.enabled = "󰂯"
+		format.connected = "󰂱"
+		format.connected_battery = "󰂱 {device_battery_percent}%"
 	}
 
 	$clock = {

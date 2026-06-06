@@ -2,6 +2,7 @@
 
 {
 	imports = [
+		./blueman
 		./upower
 		./logind
 		./dbus

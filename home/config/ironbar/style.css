@@ -12,7 +12,7 @@ window#topbar>centerbox {
   background-color: #1a1b26;
 
   border-width: 3px;
-  border-style: ridge;
+  border-style: solid;
   border-radius: 15px;
   border-color: #7aa2f7;
 
@@ -26,13 +26,12 @@ window#topbar>centerbox {
 #topbar-keyboard_layout,
 #topbar-battery,
 #topbar-bluetooth,
-#topbar-network,
 #topbar-clock {
   background-color: #16161e;
 
   border-width: 0.5px;
-  border-style: ridge;
-  border-color: #27a1b9;
+  border-style: solid;
+  border-color: #414868;
   border-radius: 15px;
 
   margin: 3px;
@@ -46,12 +45,11 @@ window#topbar>centerbox {
 #topbar-keyboard_layout:hover,
 #topbar-battery:hover,
 #topbar-bluetooth:hover,
-#topbar-network:hover,
 #topbar-clock:hover {
-  background-color: #283457;
+  background-color: #24283b;
 }
 
 #topbar-workspaces button.focused {
-  color: #000;
-  background-color: #1abc9c;
+  color: #1a1b26;
+  background-color: #7aa2f7;
 }
