@@ -3,7 +3,8 @@
   font-size: 14px;
 }
 
-window#topbar {
+window#topbar,
+#topbar-tray {
   background-color: transparent;
 }
 
@@ -25,7 +26,7 @@ window#topbar>centerbox {
 
 #topbar-keyboard_layout,
 #topbar-battery,
-#topbar-bluetooth,
+#topbar-tray .item,
 #topbar-clock {
   background-color: #16161e;
 
@@ -44,7 +45,7 @@ window#topbar>centerbox {
 
 #topbar-keyboard_layout:hover,
 #topbar-battery:hover,
-#topbar-bluetooth:hover,
+#topbar-tray .item:hover,
 #topbar-clock:hover {
   background-color: #24283b;
 }

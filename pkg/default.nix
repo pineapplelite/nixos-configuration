@@ -8,6 +8,7 @@
 		./xdg-user-dirs
 		./xfconf
 		./xwayland-satellite
+		./networkmanagerapplet
 
 		./niri
 		./swayidle

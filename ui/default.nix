@@ -5,5 +5,6 @@
 		./stylix.nix
 		./fonts.nix
 		./cursor.nix
+		./icons.nix
 	];
 }

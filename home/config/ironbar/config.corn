@@ -3,9 +3,11 @@ let {
 
 	$focused_window = {
 		name = "topbar-focused_window"
-		type = "script"
-		cmd = "niri msg -j focused-window | jq -r '(.title // \"Niri\") | if length > 13 then .[:13] + \"...\" else . end'"
-		interval = 200
+		type = "focused"
+
+		truncate.mode = "end"
+		truncate.max_length = 13
+		icon_size = 16
 	}
 
 	// -- center --
@@ -20,32 +22,31 @@ let {
 	$keyboard_layout = {
 		name = "topbar-keyboard_layout"
 		type = "script"
+
 		cmd = "niri msg -j keyboard-layouts | jq -r '.names[.current_idx] | .[0:2] | ascii_downcase'"
 		interval = 100
+
+		on_click_left = "niri msg action switch-layout next"
+		on_click_right = "niri msg action switch-layout prev"
 	}
 
 	$battery = {
 		name = "topbar-battery"
 		type = "battery"
-
-		show_icon = false
-		format = "󰂄 {percentage}%"
 	}
 
-	$bluetooth = {
-		name = "topbar-bluetooth"
-		type = "bluetooth"
+	$tray = {
+		name = "topbar-tray"
+		type = "tray"
 
-		format.not_found = "󰂲"
-		format.disabled = "󰂲"
-		format.enabled = "󰂯"
-		format.connected = "󰂱"
-		format.connected_battery = "󰂱 {device_battery_percent}%"
+		on_click_left = "menu"
+		on_click_right = "none"
 	}
 
 	$clock = {
 		name = "topbar-clock"
 		type = "clock"
+
 		format = "%Y-%m-%d %H:%M"
 	}
 } in {
@@ -53,13 +54,17 @@ let {
 		{
 			name = "topbar"
 			position = "top"
+
 			margin.top = 6
 			margin.left = 6
 			margin.right = 6
 
+			popup_autohide = true
+			popup_gap = 10
+
 			start = [ $focused_window ]
 			center = [ $workspaces ]
-			end = [ $keyboard_layout $battery $bluetooth $clock ]
+			end = [ $keyboard_layout $battery $tray $clock ]
 		}
 	]
 }
