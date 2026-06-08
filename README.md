@@ -5,7 +5,6 @@ A minimalist Unix-like NixOS configuration.
 # Configuration tree:
 
 ```
-tree --dirsfirst
 .
 ├── home
 │   ├── config
@@ -148,6 +147,8 @@ tree --dirsfirst
 │   │   └── default.nix
 │   ├── mesa
 │   │   └── default.nix
+│   ├── networkmanagerapplet
+│   │   └── default.nix
 │   ├── niri
 │   │   └── default.nix
 │   ├── nixd
@@ -242,6 +243,7 @@ tree --dirsfirst
 │   ├── cursor.nix
 │   ├── default.nix
 │   ├── fonts.nix
+│   ├── icons.nix
 │   ├── stylix.nix
 │   └── wallpaper.png
 ├── flake.lock
@@ -249,5 +251,5 @@ tree --dirsfirst
 ├── LICENSE
 └── README.md
 
-102 directories, 140 files
+103 directories, 142 files
 ```
