@@ -56,7 +56,7 @@
 		./retext
 		./gimp
 		./thunar
-		./librewolf
+		./firefox
 		./helix
 		./yazi
 		./fuzzel
