@@ -99,6 +99,8 @@ A minimalist Unix-like NixOS configuration.
 │   │   └── default.nix
 │   ├── file-roller
 │   │   └── default.nix
+│   ├── firefox
+│   │   └── default.nix
 │   ├── fish
 │   │   └── default.nix
 │   ├── foot
@@ -130,8 +132,6 @@ A minimalist Unix-like NixOS configuration.
 │   ├── kid3
 │   │   └── default.nix
 │   ├── libreoffice-fresh
-│   │   └── default.nix
-│   ├── librewolf
 │   │   └── default.nix
 │   ├── libva-utils
 │   │   └── default.nix
