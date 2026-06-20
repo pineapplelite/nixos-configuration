@@ -9,6 +9,7 @@
 		./xfconf
 		./xwayland-satellite
 		./networkmanagerapplet
+		./libnotify
 
 		./niri
 		./swayidle
@@ -17,6 +18,7 @@
 		./fish
 		./awww
 		./mako
+		./swayosd
 
 		./wl-clipboard
 		./cliphist
@@ -64,6 +66,7 @@
 		./foot
 		./steam
 		./kid3
+		./translate-shell
 
 		./lxqt
 		./kdePackages

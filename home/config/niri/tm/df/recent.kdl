@@ -1,0 +1,17 @@
+recent-windows {
+	debounce-ms 750
+
+	open-delay-ms 150
+
+	highlight {
+		active-color "#7aa2f7"
+		urgent-color "#f7768e"
+		padding 24
+		corner-radius 15
+	}
+
+	previews {
+		max-height 400
+		max-scale 0.5
+	}
+}

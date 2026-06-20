@@ -1,0 +1,3 @@
+include "kb.kdl" // keyboard
+include "tp.kdl" // touchpad
+include "ms.kdl" // mouse

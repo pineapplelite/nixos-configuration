@@ -1,0 +1,11 @@
+window-rule {
+	geometry-corner-radius 15
+	clip-to-geometry true
+
+	draw-border-with-background false
+	opacity 0.95
+	background-effect {
+		blur true
+		xray true
+	}
+}

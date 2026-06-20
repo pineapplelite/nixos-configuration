@@ -10,4 +10,5 @@
 	home.file.".config/yazi".source = ./yazi;
 	home.file.".config/zellij".source = ./zellij;
 	home.file.".config/fastfetch".source = ./fastfetch;
+	home.file.".config/awww".source = ./awww;
 }

@@ -1,0 +1,15 @@
+layout {
+	background-color "1a1b26"
+	gaps 12
+	always-center-single-column
+
+	default-column-width {
+		proportion 0.5;
+	}
+
+	focus-ring {
+		width 3
+		active-color "#7aa2f7"
+	}
+}
+prefer-no-csd

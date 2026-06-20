@@ -17,7 +17,7 @@ let {
 		type = "workspaces"
 	}
 
-	// -- end -- 
+	// -- end --
 
 	$keyboard_layout = {
 		name = "topbar-keyboard_layout"
@@ -55,12 +55,11 @@ let {
 			name = "topbar"
 			position = "top"
 
-			margin.top = 6
 			margin.left = 6
 			margin.right = 6
 
 			popup_autohide = true
-			popup_gap = 10
+			popup_gap = 18
 
 			start = [ $focused_window ]
 			center = [ $workspaces ]

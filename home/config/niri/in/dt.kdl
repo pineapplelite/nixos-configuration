@@ -1,0 +1,13 @@
+spawn-at-startup "foot" "--server"
+
+spawn-at-startup "mako"
+spawn-at-startup "swayosd-server"
+
+spawn-at-startup "ironbar"
+spawn-at-startup "networkmanagerapplet"
+
+spawn-at-startup "awww-daemon"
+spawn-at-startup "awww" "img" "~/.config/awww/wallpaper.png"
+
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"

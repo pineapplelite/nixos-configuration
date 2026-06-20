@@ -1,5 +1,0 @@
-binds {
-	Mod+T { spawn-sh "footclient"; }
-	Mod+B { spawn-sh "firefox"; }
-	Mod+D { spawn-sh "fuzzel"; }
-}

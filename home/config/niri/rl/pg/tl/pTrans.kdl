@@ -1,0 +1,5 @@
+window-rule {
+	match title="pTrans"
+
+	open-floating true
+}

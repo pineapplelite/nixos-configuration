@@ -11,8 +11,10 @@
 		./pipewire
 		./libinput
 		./power-profiles-daemon
+
 		./flatpak
 		./flatpak-repo
+
 		./ly
 		./swayidle
 	];

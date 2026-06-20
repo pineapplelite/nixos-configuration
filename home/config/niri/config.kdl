@@ -1,5 +1,6 @@
-include "hardware/default.kdl"
-include "init/default.kdl"
-include "shortcuts/default.kdl"
-include "rules/default.kdl"
-include "themes/default.kdl"
+include "hw/df.kdl" // hardware
+include "in/df.kdl" // init
+include "sc/df.kdl" // shortcuts
+include "gt/df.kdl" // gestures
+include "rl/df.kdl" // rules
+include "tm/df.kdl" // themes

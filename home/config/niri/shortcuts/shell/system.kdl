@@ -1,4 +1,0 @@
-binds {
-	Ctrl+Alt+Delete { quit; }
-	Mod+Alt+Slash { show-hotkey-overlay; }
-}

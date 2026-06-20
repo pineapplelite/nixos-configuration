@@ -1,0 +1,6 @@
+binds {
+	Ctrl+Alt+Delete { quit; }
+	Ctrl+Alt+Escape { spawn "loginctl" "lock-session"; }
+
+	Mod+Alt+Slash { show-hotkey-overlay; }
+}

@@ -1,0 +1,9 @@
+include "si.kdl" // session
+include "ov.kdl" // output volume - sound
+include "iv.kdl" // input volume - microphone
+include "bn.kdl" // brightness
+include "mi.kdl" // media player
+include "wd.kdl" // window
+include "ws.kdl" // workspace
+include "so.kdl" // screenshot
+include "ex.kdl" // execute

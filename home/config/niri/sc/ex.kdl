@@ -1,0 +1,7 @@
+binds {
+	Mod+T { spawn "footclient"; }
+	Mod+B { spawn "firefox"; }
+	Mod+D { spawn "fuzzel"; }
+
+	Mod+P { spawn "~/.config/niri/sh/ptrans.sh"; }
+}

@@ -1,0 +1,6 @@
+binds {
+	XF86AudioPlay allow-when-locked=true { spawn "swayosd-client" "--playerctl" "play-pause"; }
+	XF86AudioStop allow-when-locked=true { spawn "swayosd-client" "--playerctl" "stop"; }
+	XF86AudioPrev { spawn "swayosd-client" "--playerctl" "previous"; }
+	XF86AudioNext { spawn "swayosd-client" "--playerctl" "next"; }
+}
